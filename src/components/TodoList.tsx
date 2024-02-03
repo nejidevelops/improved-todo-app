@@ -15,8 +15,24 @@ function TodoList() {
             <FaTrash />
           </div>
         </li>
-        <li>Todo 2</li>
-        <li>Todo 3</li>
+        <li>
+          <div className="activity-name">
+            Todo 2
+          </div>
+          <div className="activity-actions">
+            <FaPencilAlt />
+            <FaTrash />
+          </div>
+        </li>
+        <li>
+          <div className="activity-name">
+            Todo 3
+          </div>
+          <div className="activity-actions">
+            <FaPencilAlt />
+            <FaTrash />
+          </div>
+        </li>
       </ul>
     </>
   )
