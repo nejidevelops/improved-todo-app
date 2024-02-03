@@ -32,6 +32,29 @@ ul {
   gap: 1.5rem;
 }
 
+/* TodoForm.css */
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  background: hsl(216, 50%, 16%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(217, 54%, 11%);
+}
+
 ul li {
   display: flex;
   align-items: center;
