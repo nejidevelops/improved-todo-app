@@ -59,6 +59,8 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0.625rem;
+  border-bottom: 1px solid hsl(0, 0%, 100%);
 }
 
 ul li .activity-actions {
