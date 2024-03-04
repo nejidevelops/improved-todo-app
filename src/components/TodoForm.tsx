@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-function TodoForm() {
+function TodoForm({ onAddTodo }: { onAddTodo: (todo: string) => void }) {
   const [todo, setTodo] = useState("");
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(todo);
-    setTodo("");
+    if (todo.trim() !== "") {
+      onAddTodo(todo);
+      setTodo("");
+    }
   }
 
   return (
@@ -19,4 +20,4 @@ function TodoForm() {
   )
 }
 
-export default TodoForm
+export default TodoForm;
